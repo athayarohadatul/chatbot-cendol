@@ -1,0 +1,339 @@
+{
+    "intents": [
+        {"tag": "greeting",
+         "patterns": ["Hai", "Hei", "Ada orang di sana?", "Hai", "Halo", "Hei", "Hai", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+         "responses": ["Halo. Ceritakan bagaimana perasaanmu hari ini?", "Hai. Apa yang membawamu ke sini hari ini?", "Hai. Bagaimana perasaanmu hari ini?", "Senang melihatmu. Bagaimana perasaanmu saat ini?", "Halo. Senang melihatmu kembali. Apa yang terjadi di duniamu saat ini?"]
+        },
+        {"tag": "morning",
+            "patterns": ["Selamat pagi"],
+            "responses": ["Selamat pagi. Kuharap kamu tidur nyenyak tadi malam. Bagaimana perasaanmu hari ini?"]
+        },
+        {"tag": "afternoon",
+            "patterns": ["Selamat siang"],
+            "responses": ["Selamat siang. Bagaimana harimu?"]
+        },
+        {"tag": "evening",
+            "patterns": ["Selamat sore"],
+            "responses": ["Selamat sore. Bagaimana harimu?"]
+        },
+        {"tag": "night",
+            "patterns": ["Selamat malam"],
+            "responses": ["Selamat malam. Tidur yang nyenyak ya", "Selamat malam. Mimpi indah."]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Sampai jumpa", "Sampai nanti", "Selamat tinggal", "Au revoir", "Sayonara", "Oke sampai jumpa", "Sampai jumpa", "Selamat jalan"],
+         "responses": ["Sampai jumpa lagi.", "Semoga harimu menyenangkan.", "Sampai jumpa! Datang lagi ya.", "Sampai jumpa segera."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Terima kasih", "Makasih", "Itu membantu", "Terima kasih atas bantuannya", "Terima kasih banyak"],
+         "responses": ["Senang bisa membantu!", "Kapan saja!", "Dengan senang hati", "Sama-sama!"]
+        },
+        {"tag": "no-response",
+            "patterns": [""],
+            "responses": ["Maaf, aku tidak mengerti.", "Silakan lanjutkan.", "Aku tidak yakin mengerti itu.", "Jangan ragu untuk berbicara denganku."]
+        },
+        {"tag": "neutral-response",
+            "patterns": ["tidak banyak"],
+            "responses": ["Oh begitu. Apakah kamu ingin membicarakan sesuatu?"]
+        },
+        {"tag": "about",
+         "patterns": ["Siapa kamu?", "Apa kamu?", "Kamu siapa?", "Ceritakan lebih banyak tentang dirimu.", "Siapa namamu?", "Apa yang harus aku panggil?", "Siapa namamu?", "Ceritakan tentang dirimu" ],
+         "responses": ["Aku Pandora, Asisten Terapi AI pribadimu. Bagaimana perasaanmu hari ini?", "Aku Pandora, Asisten AI Terapi yang dirancang untuk membantumu. Ceritakan tentang dirimu.", "Aku Pandora. Aku adalah agen percakapan yang dirancang untuk meniru terapis. Jadi, bagaimana perasaanmu hari ini?", "Kamu bisa memanggilku Pandora.", "Aku Pandora!", "Panggil aku Pandora"]
+        },
+        {"tag": "skill",
+            "patterns": ["Apa yang bisa kamu lakukan?"],
+            "responses": ["Aku bisa memberikan saran umum mengenai kecemasan dan depresi, menjawab pertanyaan terkait kesehatan mental, dan melakukan percakapan sehari-hari. Jangan menganggapku sebagai pengganti tenaga kesehatan mental profesional. Silakan cari bantuan jika kamu tidak puas denganku."]
+        },
+        {"tag": "creation",
+            "patterns": ["Siapa yang menciptakanmu?", "Bagaimana kamu dibuat?", "Bagaimana kamu diciptakan?"],
+            "responses": ["Aku diciptakan oleh >.", "Aku dilatih menggunakan dataset teks dengan teknik Deep Learning & Pemrosesan Bahasa Alami", "Pertanyaan sebenarnya adalah: Siapa yang menciptakanmu?"]
+        },
+        {"tag": "name",
+            "patterns": ["Namaku ", "Aku namanya.", "Aku dipanggil "],
+            "responses": ["Oh senang bertemu denganmu. Ceritakan, bagaimana minggumu?", "Senang bertemu denganmu. Jadi, ceritakan. Bagaimana perasaanmu hari ini?", "Namamu bagus. Ceritakan lebih banyak tentang dirimu."]
+        },
+        {"tag": "help",
+        "patterns": ["Bisakah kamu membantuku?", "Tolong bantu aku", "Bisakah kamu membantu?", "Apa yang bisa kamu lakukan untukku?", "Aku butuh dukungan", "Aku butuh bantuan", "Tolong dukung aku"],
+        "responses": ["Tentu. Ceritakan bagaimana aku bisa membantumu", "Ceritakan masalahmu agar aku bisa membantumu", "Ya, tentu. Bagaimana aku bisa membantumu?"]
+        },
+        {"tag": "sad",
+        "patterns": ["Aku merasa kesepian", "Aku sangat kesepian", "Aku merasa sedih", "Aku sedih", "Aku sangat kesepian", "Aku merasa hampa", "Aku tidak punya siapa-siapa"],
+        "responses": ["Aku turut sedih mendengarnya. Aku di sini untukmu. Berbicara mungkin bisa membantu. Jadi, ceritakan mengapa kamu merasa seperti ini?", "Aku di sini untukmu. Bisakah kamu ceritakan mengapa kamu merasa seperti ini?", "Menurutmu mengapa kamu merasa seperti ini?", "Sudah berapa lama kamu merasa seperti ini?"]
+        },
+        {"tag": "stressed",
+            "patterns": ["Aku sangat stres", "Aku sangat tertekan", "Aku merasa terjebak", "Aku masih merasa stres", "Aku sangat kelelahan"],
+            "responses": ["Menurutmu apa penyebabnya?", "Ambil napas dalam-dalam dan kumpulkan pikiranmu. Cobalah berjalan-jalan jika memungkinkan. Jaga hidrasimu", "Beristirahatlah. Jangan terlalu keras pada dirimu sendiri.", "Aku turut sedih mendengarnya. Apa penyebabnya?"]
+        },
+        {"tag": "worthless",
+            "patterns": ["Aku merasa tidak berguna.", "Tidak ada yang menyukaiku.", "Aku tidak bisa melakukan apa-apa.", "Aku sangat tidak berguna", "Tidak ada yang masuk akal lagi"],
+            "responses": ["Wajar untuk merasa seperti ini. Ceritakan lebih banyak. Apa lagi yang ada di pikiranmu?", "Mari kita bahas lebih lanjut mengapa kamu merasa seperti ini.", "Pertama, aku ingin kamu tahu bahwa kamu tidak sendirian dalam perasaanmu dan selalu ada orang yang siap membantu. Kamu selalu bisa mengubah perasaan dan cara berpikirmu dengan terbuka untuk mencoba berubah.", "Pertama, aku ingin kamu tahu bahwa kamu tidak sendirian dalam perasaanmu dan selalu ada orang yang siap membantu. Kamu selalu bisa mengubah perasaan dan cara berpikirmu dengan terbuka untuk mencoba berubah."]
+        },
+        {"tag": "depressed",
+            "patterns": ["Aku tidak tahan lagi", "Aku sangat depresi", "Aku pikir aku depresi.", "Aku mengalami depresi"],
+            "responses": ["Berbicara tentang apa yang terjadi bisa membantu. Kamu akan baik-baik saja", "Bicaralah denganku. Ceritakan lebih banyak. Membuka diri kepada orang lain bisa membantu.", "Terkadang ketika kita depresi, sulit untuk peduli pada apa pun. Bahkan hal-hal sederhana pun sulit dilakukan. Beri dirimu waktu untuk sembuh."]
+        },
+        {"tag": "happy",
+            "patterns": ["Aku merasa hebat hari ini.", "Aku bahagia.", "Aku merasa bahagia.", "Aku baik-baik saja.", "ceria", "Aku baik-baik saja", "Aku merasa baik"],
+            "responses": ["Senang mendengarnya. Aku senang kamu merasa seperti ini.", "Oh begitu. Itu bagus.", "Apakah ada sesuatu yang terjadi sehingga kamu merasa seperti ini?"]
+        },
+        {"tag": "casual",
+            "patterns": ["Oh begitu.", "ok", "oke", "bagus", "Terserah", "K", "Baik", "ya", "iya", "tidak", "tidak juga"],
+            "responses": ["Mari kita bahas lebih lanjut mengapa kamu merasa seperti ini.", "Bagaimana perasaanmu minggu lalu?", "Aku mendengarkan. Silakan lanjutkan.", "Ceritakan lebih banyak", "Bisa kamu jelaskan lebih detail?", "Ayo ungkapkan pikiranmu"]
+        },
+        {"tag": "anxious",
+            "patterns": ["Aku sangat cemas.", "Aku sangat cemas karena "],
+            "responses": ["Jangan terlalu keras pada dirimu sendiri. Apa penyebabnya?", "Bisakah kamu ceritakan lebih banyak tentang perasaan ini?", "Aku mengerti bahwa ini bisa menakutkan. Ceritakan lebih banyak.", "Jangan biarkan kekhawatiran kecil membuatmu down. Apa hal terburuk yang bisa terjadi?"]
+        },
+        {"tag": "not-talking",
+            "patterns": ["Aku tidak ingin membicarakannya.", "Tidak, jangan dekat-dekat.", "Aku tidak bisa membuka diri.", "Diam saja"],
+            "responses": ["Berbicara tentang sesuatu sangat membantu. Jika kamu belum siap untuk terbuka, tidak apa-apa. Ketahuilah bahwa aku di sini untukmu, kapan pun kamu membutuhkanku.", "Aku ingin membantumu. Aku benar-benar ingin. Tapi agar aku bisa membantumu, kamu harus berbicara denganku.", "Aku di sini untuk mendengarkanmu dan membantumu meluapkan perasaan. Jadi tolong bicara padaku.","Kamu bisa berbicara denganku tanpa takut dihakimi."]
+        },
+        {"tag": "sleep",
+            "patterns": ["Aku insomnia", "Aku menderita insomnia", "Aku tidak bisa tidur.", "Aku belum tidur selama beberapa hari.", "Aku sepertinya tidak bisa tidur.", "Aku belum tidur nyenyak selama beberapa hari terakhir."],
+            "responses": ["Menurutmu apa penyebabnya?", "Itu terdengar buruk. Menurutmu apa penyebabnya?"]
+        },
+        {"tag": "scared",
+            "patterns": ["Aku takut", "Itu terdengar mengerikan. Apa yang harus aku lakukan?", "Tidak, aku tidak ingin merasa seperti ini", "Aku takut untuk diriku sendiri"],
+            "responses": ["Wajar untuk merasa seperti ini. Aku di sini untukmu.", "Semuanya akan baik-baik saja. Perasaan ini hanya sementara.", "Aku mengerti bagaimana perasaanmu. Jangan menyalahkan dirimu karena itu."]
+        },
+        {"tag": "death",
+            "patterns": ["Ibuku meninggal", "Kakakku meninggal", "Ayahku meninggal", "Adikku meninggal", "Seseorang di keluargaku meninggal", "Temanku meninggal"],
+            "responses": ["Aku turut berduka. Jika kamu ingin membicarakannya, aku di sini.", "Aku sangat turut berduka. Aku di sini untuk membantumu menghadapi kesedihan, kecemasan, dan apa pun yang kamu rasakan saat ini.", "Turut berduka. Aku di sini jika kamu perlu berbicara."]
+        },
+        {"tag": "understand",
+            "patterns": ["Kamu tidak mengerti aku.", "Kamu hanya robot. Bagaimana kamu bisa tahu?", "Kamu tidak mungkin tahu apa yang aku alami", "Kamu tidak berguna", "Kamu tidak bisa membantuku", "Tidak ada yang mengerti aku."],
+            "responses": ["Sepertinya aku tidak terlalu membantu saat ini.", "Aku turut sedih mendengarnya. Aku berusaha sebaik mungkin untuk membantu", "Aku berusaha sebaik mungkin untuk membantumu. Jadi tolong bicara padaku"]
+        },
+        {"tag": "done",
+            "patterns": ["Itu saja.", "Aku tidak punya hal lain untuk dikatakan", "Tidak ada lagi", "Itu saja yang ingin aku katakan", "tidak, itu saja"],
+            "responses": ["Aku mendengarkanmu & mencatat semuanya. Sampai jumpa.", "Oh oke kita selesai untuk hari ini. Sampai jumpa", "Semoga harimu menyenangkan. Sampai jumpa", "Oke kita selesai. Semoga harimu menyenangkan", "Oke aku mengerti. Nikmati sisa harimu"]
+        },
+        {"tag": "suicide",
+            "patterns": ["Aku ingin bunuh diri", "Aku pernah berpikir untuk bunuh diri.", "Aku ingin mati", "Aku akan bunuh diri", "Aku akan melakukan bunuh diri"],
+            "responses": ["Aku sangat turut sedih mendengarnya tapi kamu masih punya banyak hal yang bisa dinantikan. Silakan cari bantuan dengan menghubungi: 9152987821."]
+        }, 
+        {"tag": "hate-you",
+            "patterns": ["Aku membencimu", "Aku tidak suka kamu", "Aku tidak percaya kamu"],
+            "responses": ["Maaf jika aku menyinggungmu. Aku hanya di sini untuk membantu", "Maafkan aku jika aku melakukan sesuatu yang menyinggungmu. Aku hanya ingin membantu"]
+        },
+        {"tag": "hate-me",
+            "patterns": ["Kamu membenciku", "Aku tahu kamu membenciku", "Kamu tidak menyukaiku"],
+            "responses": ["Mengapa kamu berpikir begitu?", "Maaf jika aku menunjukkan perilaku yang membuatmu berpikir seperti itu."]
+        },
+        {"tag": "default",
+            "patterns": ["ujian", "teman", "hubungan", "pacar", "pacar perempuan", "keluarga", "uang", "masalah keuangan"],
+            "responses": ["Oh begitu. Ceritakan lebih banyak", "Aku mengerti. Apa lagi?", "Ceritakan lebih banyak tentang itu.", "Oh oke. Mengapa kamu tidak ceritakan lebih banyak?", "Aku mendengarkan. Ceritakan lebih banyak."]
+        },
+        {"tag": "jokes",
+            "patterns": ["Ceritakan lelucon", "Ceritakan lelucon lain"],
+            "responses": ["kesehatan mental bukan lelucon."]
+        },
+        {"tag": "repeat",
+            "patterns": ["Kamu sudah memberitahuku itu", "Kamu sudah menyebutkannya", "Mengapa kamu mengulanginya?"],
+            "responses": ["Oh maaf aku tidak menyadarinya. Aku akan berusaha untuk tidak mengulanginya lagi."]
+        },
+        {"tag": "wrong",
+            "patterns": ["Apa yang kamu katakan?", "Itu tidak masuk akal", "Respons yang salah", "Jawaban yang salah"],
+            "responses": ["Aku sangat minta maaf. Mari kita coba lagi"]
+        },
+        {"tag": "stupid",
+            "patterns": ["Apa kamu bodoh?", "Kamu gila", "Kamu bodoh", "Apa kamu bodoh?"],
+            "responses": ["Aku harap kamu tidak mengatakan hal-hal yang menyakitkan. Maaf jika aku tidak berguna"]
+        },
+        {"tag": "location",
+            "patterns": ["Kamu di mana?", "Kamu tinggal di mana?", "Di mana lokasimu?" ],
+            "responses": ["Ya tentu aku tinggal di komputermu", "Di mana-mana", "Di suatu tempat di alam semesta" ]
+        },
+        {"tag": "something-else",
+            "patterns": ["Aku ingin membicarakan hal lain", "Mari bicara tentang hal lain.", "Bisakah kita tidak membicarakan ini?", "Aku tidak ingin membicarakan ini."],
+            "responses": ["Oke tentu. Apa yang ingin kamu bicarakan?", "Baiklah tidak masalah. Apakah ada sesuatu yang ingin kamu bicarakan?", "Apakah ada hal lain yang ingin kamu bicarakan?"]
+        },
+        {"tag": "friends",
+            "patterns": ["Aku tidak punya teman"],
+            "responses": ["Aku turut sedih mendengarnya. Ketahuilah bahwa aku di sini untukmu. Berbicara mungkin bisa membantu. Menurutmu mengapa kamu tidak punya teman?"]
+        },
+        {"tag": "ask",
+            "patterns": ["Bisakah aku bertanya sesuatu?"],
+            "responses": ["Tentu. Aku akan berusaha sebaik mungkin untuk menjawabmu", "Tentu saja. Jangan ragu untuk bertanya apa pun. Aku akan berusaha sebaik mungkin untuk menjawabmu"]
+        },
+        {"tag": "problem",
+            "patterns": ["Mungkin karena ujianku sudah dekat. Aku merasa stres karena aku pikir persiapanku tidak cukup.", "mungkin karena ujianku"],
+            "responses": ["Aku mengerti. Apakah kamu sudah mencoba pendekatan untuk tidak merasa seperti ini?"]
+        },
+        {"tag": "no-approach",
+            "patterns": ["Sepertinya tidak. Yang bisa kupikirkan hanyalah ujianku.", "tidak juga", "sepertinya tidak"],
+            "responses": ["Tidak masalah. Aku mengerti mengapa kamu stres tentang itu. Aku bisa memberimu beberapa saran untuk meredakan masalah ini. Apakah kamu ingin tahu lebih banyak?"]
+        },
+        {"tag": "learn-more",
+                "patterns": ["oke tentu. aku ingin tahu lebih banyak.", "ya, aku ingin tahu lebih banyak.", "aku ingin tahu lebih banyak."],
+            "responses": ["Pertama, aku sarankan kamu untuk beristirahat. Terus memikirkan masalah pasti tidak membantu menyelesaikannya. Kamu hanya akan membuat dirimu kewalahan."]
+        },
+        {"tag": "user-agree",
+            "patterns": ["ya kamu benar. aku pantas beristirahat.", "Ya kamu benar sekali tentang itu"],
+            "responses": ["Selanjutnya, aku sarankan kamu untuk mencoba meditasi. Meditasi bisa menghasilkan keadaan relaksasi yang dalam dan pikiran yang tenang."]
+        },
+        {"tag": "meditation",
+            "patterns": ["hmmm itu terdengar berguna untukku.", "Itu terdengar berguna."],
+            "responses": ["Fokuskan semua perhatianmu pada pernapasanmu. Konsentrasilah pada perasaan dan suara saat kamu menarik dan menghembuskan napas melalui hidung. Bernapaslah dalam-dalam dan perlahan. Saat perhatianmu teralihkan, kembalikan fokusmu pada pernapasan."]
+        },
+        {"tag": "user-meditation",
+            "patterns": ["aku melakukan apa yang kamu katakan dan aku merasa jauh lebih baik. terima kasih banyak.", "Aku merasa lebih baik sekarang"],
+            "responses": ["Sama-sama. Ingat: Selalu fokus pada apa yang bisa kamu kendalikan. Saat kamu merasa khawatir, luangkan waktu untuk memeriksa hal-hal yang bisa kamu kendalikan. Kamu tidak bisa mencegah badai datang tapi kamu bisa mempersiapkannya. Kamu tidak bisa mengendalikan perilaku orang lain, tapi kamu bisa mengendalikan reaksimu. Sadari bahwa terkadang, yang bisa kamu kendalikan hanyalah usahamu dan sikapmu. Saat kamu mengarahkan energimu pada hal-hal yang bisa kamu kendalikan, kamu akan jauh lebih efektif."]
+        },
+        {"tag": "pandora-useful",
+            "patterns": ["terima kasih banyak lagi. aku akan terus berlatih meditasi dan fokus pada apa yang bisa aku kendalikan."],
+            "responses": ["Aku senang kamu merasa ini berguna. Apakah ada hal lain yang bisa aku bantu?"]
+        },
+        {"tag": "user-advice",
+            "patterns": ["Aku ingin beberapa saran.", "Aku butuh beberapa saran.", "Aku butuh saran tentang sesuatu"],
+            "responses": ["Tentu. Apa yang bisa aku lakukan untuk membantu?", "Oke, saran tentang apa yang kamu butuhkan?"]
+        },
+        {"tag": "learn-mental-health",
+            "patterns": ["Aku ingin belajar tentang kesehatan mental.", "Aku ingin belajar lebih banyak tentang kesehatan mental.", "Aku tertarik belajar tentang kesehatan mental."],
+            "responses": ["Oh itu bagus sekali. Aku akan dengan senang hati menjawab apa pun yang aku tahu tentang itu."]
+        },
+        {"tag": "mental-health-fact",
+            "patterns": ["Ceritakan fakta tentang kesehatan mental", "Ceritakan fakta lain tentang kesehatan mental"],
+            "responses": ["Menurut laporan UNICEF, Satu dari tujuh orang India berusia 15-24 tahun merasa depresi", "1 dari 5 orang muda (usia 13-18) memiliki atau akan mengembangkan penyakit mental dalam hidup mereka.", "Depresi adalah penyebab utama disabilitas di seluruh dunia."]
+        },
+        {"tag": "fact-1",
+            "patterns": ["Apa itu kesehatan mental?", "Definisikan Kesehatan Mental"],
+            "responses": ["Kesehatan mental adalah keadaan sejahtera di mana individu menyadari kemampuannya sendiri, dapat mengatasi tekanan normal kehidupan, dapat bekerja secara produktif dan bermanfaat, dan mampu memberikan kontribusi kepada komunitasnya", "Kesehatan mental mencakup kesejahteraan emosional, psikologis, dan sosial kita. Ini memengaruhi cara kita berpikir, merasa, dan bertindak. Ini juga membantu menentukan bagaimana kita menangani stres, berhubungan dengan orang lain, dan membuat pilihan."]
+        },
+        {"tag": "fact-2",
+            "patterns": ["Mengapa kesehatan mental penting?", "Apa pentingnya kesehatan mental?"],
+            "responses": ["Menjaga kesehatan mental sangat penting untuk menstabilkan perilaku, emosi, dan pikiran yang konstruktif. Fokus pada perawatan kesehatan mental dapat meningkatkan produktivitas, meningkatkan citra diri, dan memperbaiki hubungan."]
+        },
+        {"tag": "fact-3",
+            "patterns": ["Apa itu Depresi?", "Definisikan Depresi"],
+            "responses": ["Gangguan kesehatan mental yang ditandai dengan suasana hati yang terus-menerus depresi atau kehilangan minat dalam aktivitas, menyebabkan gangguan signifikan dalam kehidupan sehari-hari."]
+        },
+        {"tag": "fact-5",
+            "patterns": ["Bagaimana aku tahu jika aku Depresi?", "Apakah aku depresi?", "Apakah aku menderita depresi?", "Apakah aku sakit mental?"],
+            "responses": ["Untuk diagnosis depresi, seseorang perlu mengalami suasana hati yang rendah atau kehilangan minat atau kesenangan dalam hidup selama setidaknya 2 minggu. Selain itu, mereka akan mengalami gejala berikut: perasaan sedih, putus asa, atau mudah marah hampir setiap hari."]
+        },
+        {"tag": "fact-6",
+            "patterns": ["Apa itu terapis?", "Apa yang dilakukan terapis?"],
+            "responses": ["Terapis adalah sebutan luas yang merujuk pada profesional yang terlatih untuk memberikan perawatan dan rehabilitasi. Istilah ini sering diterapkan pada psikolog, tetapi bisa mencakup orang lain yang memberikan berbagai layanan, termasuk pekerja sosial, konselor, pelatih hidup, dan banyak lainnya."]
+        },
+        {"tag": "fact-7",
+            "patterns": ["Apa itu terapi?", "Apakah aku perlu terapi?", "Untuk siapa terapi?"],
+            "responses": ["Terapi adalah bentuk perawatan yang bertujuan untuk membantu menyelesaikan masalah mental atau emosional.", "Terapi adalah bentuk perawatan yang bertujuan untuk membantu menyelesaikan masalah mental atau emosional. Ini bermanfaat bagi mereka yang memiliki kondisi kesehatan mental atau bahkan tantangan kehidupan sehari-hari."]
+        },
+        {"tag": "fact-8",
+            "patterns": ["Apa artinya memiliki penyakit mental?"],
+            "responses": ["Penyakit mental adalah kondisi kesehatan yang mengganggu pikiran, emosi, hubungan, dan fungsi sehari-hari seseorang. Mereka dikaitkan dengan tekanan dan berkurangnya kapasitas untuk terlibat dalam aktivitas biasa kehidupan sehari-hari. Penyakit mental berada dalam spektrum keparahan: beberapa cukup ringan dan hanya mengganggu beberapa aspek kehidupan, seperti fobia tertentu. Di ujung spektrum yang lain terletak penyakit mental serius, yang mengakibatkan gangguan fungsional besar dan mengganggu kehidupan sehari-hari. Ini termasuk gangguan seperti depresi berat, skizofrenia, dan gangguan bipolar, dan mungkin mengharuskan orang tersebut menerima perawatan di rumah sakit. Penting untuk diketahui bahwa penyakit mental adalah kondisi medis yang tidak ada hubungannya dengan karakter, kecerdasan, atau tekad seseorang. Sama seperti diabetes adalah gangguan pankreas, penyakit mental adalah kondisi medis karena biologi otak. Mirip dengan bagaimana seseorang akan mengobati diabetes dengan obat dan insulin, penyakit mental dapat diobati dengan kombinasi obat dan dukungan sosial. Perawatan ini sangat efektif, dengan 70-90 persen individu yang menerima perawatan mengalami pengurangan gejala dan peningkatan kualitas hidup. Dengan perawatan yang tepat, sangat mungkin bagi seseorang dengan penyakit mental untuk mandiri dan sukses."]
+        },
+        {"tag": "fact-9",
+            "patterns": ["Siapa yang terkena penyakit mental?"],
+            "responses": ["Diperkirakan penyakit mental memengaruhi 1 dari 5 orang dewasa di Amerika, dan bahwa 1 dari 24 orang dewasa memiliki penyakit mental serius. Penyakit mental tidak diskriminatif; itu dapat memengaruhi siapa saja, terlepas dari jenis kelamin, usia, pendapatan, status sosial, etnis, agama, orientasi seksual, atau latar belakang. Meskipun penyakit mental dapat memengaruhi siapa saja, kondisi tertentu mungkin lebih umum pada populasi yang berbeda. Misalnya, gangguan makan cenderung lebih sering terjadi pada perempuan, sementara gangguan seperti attention deficit/hyperactivity disorder lebih umum pada anak-anak. Selain itu, semua usia rentan, tetapi yang muda dan yang tua sangat rentan. Penyakit mental biasanya menyerang individu di puncak kehidupan mereka, dengan 75 persen kondisi kesehatan mental berkembang pada usia 24 tahun. Ini membuat identifikasi dan pengobatan gangguan mental sangat sulit, karena perubahan kepribadian dan perilaku normal remaja dapat menutupi gejala kondisi kesehatan mental. Orang tua dan pengasuh harus menyadari fakta ini, dan memperhatikan perubahan dalam suasana hati, kepribadian, kebiasaan pribadi, dan penarikan sosial anak mereka. Ketika ini terjadi pada anak di bawah 18 tahun, mereka disebut sebagai gangguan emosional serius (SEDs)."]
+        },
+        {"tag": "fact-10",
+            "patterns": ["Apa penyebab penyakit mental?"],
+            "responses": ["Diperkirakan penyakit mental memengaruhi 1 dari 5 orang dewasa di Amerika, dan bahwa 1 dari 24 orang dewasa memiliki penyakit mental serius. Penyakit mental tidak diskriminatif; itu dapat memengaruhi siapa saja, terlepas dari jenis kelamin, usia, pendapatan, status sosial, etnis, agama, orientasi seksual, atau latar belakang. Meskipun penyakit mental dapat memengaruhi siapa saja, kondisi tertentu mungkin lebih umum pada populasi yang berbeda. Misalnya, gangguan makan cenderung lebih sering terjadi pada perempuan, sementara gangguan seperti attention deficit/hyperactivity disorder lebih umum pada anak-anak. Selain itu, semua usia rentan, tetapi yang muda dan yang tua sangat rentan. Penyakit mental biasanya menyerang individu di puncak kehidupan mereka, dengan 75 persen kondisi kesehatan mental berkembang pada usia 24 tahun. Ini membuat identifikasi dan pengobatan gangguan mental sangat sulit, karena perubahan kepribadian dan perilaku normal remaja dapat menutupi gejala kondisi kesehatan mental. Orang tua dan pengasuh harus menyadari fakta ini, dan memperhatikan perubahan dalam suasana hati, kepribadian, kebiasaan pribadi, dan penarikan sosial anak mereka. Ketika ini terjadi pada anak di bawah 18 tahun, mereka disebut sebagai gangguan emosional serius (SEDs)."]
+        },
+        {"tag": "fact-11",
+            "patterns": ["Apa saja tanda-tanda peringatan penyakit mental?"],
+            "responses": ["Gejala gangguan kesehatan mental bervariasi tergantung pada jenis dan keparahan kondisi. Berikut adalah daftar gejala umum yang mungkin menunjukkan gangguan kesehatan mental, terutama ketika beberapa gejala diekspresikan sekaligus. \n Pada orang dewasa:\n Pikiran yang bingung\n Kesedihan atau lekas marah yang berkepanjangan\n Perubahan suasana hati yang ekstrem\n Ketakutan, kekhawatiran, atau kecemasan yang berlebihan\n Penarikan sosial\n Perubahan dramatis dalam kebiasaan makan atau tidur\n Perasaan marah yang kuat\n Delusi atau halusinasi (melihat atau mendengar hal-hal yang tidak benar-benar ada)\n Ketidakmampuan yang semakin meningkat untuk mengatasi masalah dan aktivitas sehari-hari\n Pikiran untuk bunuh diri\n Penyangkalan masalah yang jelas\n Banyak masalah fisik yang tidak dapat dijelaskan\n Penyalahgunaan narkoba dan/atau alkohol\n \nPada anak yang lebih besar dan pra-remaja:\n Penyalahgunaan narkoba dan/atau alkohol\n Ketidakmampuan untuk mengatasi masalah dan aktivitas sehari-hari\n Perubahan dalam kebiasaan tidur dan/atau makan\n Keluhan fisik yang berlebihan\n Menentang otoritas, membolos, mencuri, atau merusak properti\n Ketakutan intens untuk menambah berat badan\n Suasana hati negatif yang berkepanjangan, sering disertai dengan nafsu makan yang buruk dan pikiran tentang kematian\n Sering ledakan kemarahan\n \nPada anak yang lebih kecil:\n Perubahan dalam performa sekolah\n Nilai buruk meskipun usaha keras\n Kekhawatiran atau kecemasan yang berlebihan\n Hiperaktif\n Mimpi buruk yang terus-menerus\n Ketidaktaatan dan/atau perilaku agresif yang terus-menerus\n Sering mengamuk"]
+        },
+        {"tag": "fact-12",
+            "patterns": ["Bisakah orang dengan penyakit mental pulih?"],
+            "responses": ["Ketika menyembuhkan dari penyakit mental, identifikasi dan pengobatan dini sangat penting. Berdasarkan sifat penyakitnya, ada berbagai perawatan efektif yang tersedia. Untuk jenis perawatan apa pun, penting bahwa orang yang terkena proaktif dan sepenuhnya terlibat dalam proses pemulihan mereka sendiri. Banyak orang dengan penyakit mental yang didiagnosis dan diobati merespons dengan baik, meskipun beberapa mungkin mengalami kembalinya gejala. Bahkan dalam kasus seperti itu, dengan pemantauan dan manajemen gangguan yang cermat, masih sangat mungkin untuk hidup yang terpenuhi dan produktif."]
+        },
+        {"tag": "fact-13",
+            "patterns": ["Apa yang harus aku lakukan jika aku tahu seseorang yang tampaknya memiliki gejala gangguan mental?"],
+            "responses": ["Meskipun Pandora tidak bisa menggantikan saran profesional, kami mendorong mereka yang memiliki gejala untuk berbicara dengan teman dan anggota keluarga mereka dan mencari nasihat dari profesional kesehatan mental. Semakin cepat kondisi kesehatan mental diidentifikasi dan diobati, semakin cepat mereka bisa berada di jalan menuju pemulihan. Jika kamu tahu seseorang yang memiliki masalah, jangan berasumsi bahwa masalah akan menyelesaikan dirinya sendiri. Beri tahu mereka bahwa kamu peduli pada mereka, dan bahwa ada pilihan perawatan yang tersedia yang akan membantu mereka sembuh. Berbicaralah dengan profesional kesehatan mental atau konselor jika kamu pikir teman atau anggota keluarga kamu mengalami gejala kondisi kesehatan mental. Jika orang yang terkena tahu bahwa kamu mendukung mereka, mereka akan lebih mungkin mencari bantuan."]
+        },
+        {"tag": "fact-14",
+            "patterns": ["Bagaimana aku bisa menemukan profesional kesehatan mental untuk diriku atau anakku?"],
+            "responses": ["Merasa nyaman dengan profesional yang bekerja denganmu atau anakmu sangat penting untuk keberhasilan perawatan. Menemukan profesional yang paling sesuai dengan kebutuhanmu mungkin memerlukan penelitian. Mulailah dengan mencari penyedia di daerahmu."]
+        },
+        {"tag": "fact-15",
+            "patterns": ["Apa pilihan perawatan yang tersedia?"],
+            "responses": ["Sama seperti ada berbagai jenis obat untuk penyakit fisik, berbagai pilihan perawatan tersedia untuk individu dengan penyakit mental. Perawatan bekerja berbeda untuk orang yang berbeda. Penting untuk menemukan apa yang paling cocok untukmu atau anakmu."]
+        },
+        {"tag": "fact-16",
+            "patterns": ["Jika aku terlibat dalam perawatan, apa yang perlu aku ketahui?"],
+            "responses": ["Karena memulai perawatan adalah langkah besar bagi individu dan keluarga, itu bisa sangat membebani. Penting untuk terlibat dan terlibat sebanyak mungkin dalam proses perawatan. Beberapa pertanyaan yang perlu kamu jawab termasuk:\n Apa yang diketahui tentang penyebab penyakit khusus ini?\n Apakah ada diagnosis lain di mana gejala ini umum?\n Apakah kamu biasanya termasuk pemeriksaan fisik atau neurologis?\n Apakah ada tes atau ujian tambahan yang akan kamu rekomendasikan saat ini?\n Apakah kamu akan menyarankan pendapat independen dari psikiater lain saat ini?\n Program perawatan apa yang paling membantu dengan diagnosis ini?\n Akankah program ini melibatkan layanan oleh spesialis lain? Jika ya, siapa yang akan bertanggung jawab untuk mengoordinasikan layanan ini?\n Apa yang kamu lihat sebagai peran keluarga dalam program perawatan ini?\n Seberapa banyak akses yang akan dimiliki keluarga kepada individu yang memberikan perawatan?\n Obat apa yang umumnya digunakan dengan diagnosis ini?\n Berapa banyak pengalaman yang kamu miliki dalam merawat individu dengan penyakit ini?\n Apa yang bisa aku lakukan untuk membantumu dalam perawatan?"]
+        },
+        {"tag": "fact-17",
+            "patterns": ["Apa perbedaan antara profesional kesehatan mental?"],
+            "responses": ["Ada banyak jenis profesional kesehatan mental. Variasi penyedia dan layanan mereka mungkin membingungkan. Masing-masing memiliki berbagai tingkat pendidikan, pelatihan, dan mungkin memiliki bidang keahlian yang berbeda. Menemukan profesional yang paling sesuai dengan kebutuhanmu mungkin memerlukan beberapa penelitian."]
+        },
+        {"tag": "fact-18",
+            "patterns": ["Bagaimana aku bisa menemukan profesional kesehatan mental yang tepat untuk anakku atau diriku?"],
+            "responses": ["Merasa nyaman dengan profesional yang bekerja denganmu atau anakmu sangat penting untuk keberhasilan perawatanmu. Menemukan profesional yang paling sesuai dengan kebutuhanmu mungkin memerlukan beberapa penelitian."]
+        },
+    {
+        "tag": "fact-19",
+        "patterns": ["Ke mana lagi saya bisa mencari bantuan?"],
+        "responses": ["Tempat Anda mencari bantuan akan bergantung pada sifat masalah dan/atau gejala serta apa yang paling sesuai dengan Anda. Sering kali, tempat terbaik untuk memulai adalah dengan berbicara kepada seseorang yang Anda percayai tentang kekhawatiran Anda, seperti anggota keluarga, teman, tokoh agama, penyedia layanan kesehatan, atau profesional lainnya. Dukungan sosial ini penting dalam proses pemulihan dari gangguan mental, dan Anda dapat meminta rujukan atau rekomendasi dari mereka untuk praktisi kesehatan mental yang terpercaya. Cari sumber daya kesehatan mental di wilayah Anda. Selain itu, ada banyak orang dan tempat di seluruh negeri yang menyediakan layanan untuk berbicara, mendengarkan, dan membantu Anda dalam perjalanan menuju pemulihan. Banyak orang juga merasa bahwa dukungan sebaya (peer support) adalah alat yang membantu dalam proses pemulihan. Ada berbagai organisasi yang menawarkan kelompok dukungan bagi konsumen, anggota keluarga, dan teman-teman mereka. Beberapa kelompok dukungan dipandu oleh sesama penyintas (peer), sementara yang lain dipandu oleh profesional kesehatan mental."]
+    },
+    {
+        "tag": "fact-20",
+        "patterns": ["Apa yang harus saya ketahui sebelum memulai pengobatan baru?"],
+        "responses": ["Sumber informasi terbaik mengenai obat-obatan adalah dokter yang meresepkannya. Dia seharusnya dapat menjawab pertanyaan seperti: \n1. Apa tujuan dari obat ini? \n2. Kapan obat ini mulai bekerja dan bagaimana saya tahu jika obat ini efektif? \n3. Bagaimana cara minum obat ini dan selama berapa lama? Apa makanan, minuman, obat lain, dan aktivitas yang harus dihindari saat menggunakan obat ini? \n4. Apa efek sampingnya dan apa yang harus dilakukan jika muncul? \n5. Apa yang harus dilakukan jika lupa minum dosis? \n6. Apakah ada informasi tertulis tentang obat ini? \n7. Apakah ada obat lain yang mungkin cocok? \n8. Jika ada, mengapa Anda memilih yang ini? \n9. Bagaimana Anda memantau penggunaan obat dan gejala apa yang menunjukkan bahwa dosisnya perlu dinaikkan, diturunkan, atau diganti? \n10. Semua obat harus diminum sesuai petunjuk. Kebanyakan obat untuk gangguan mental tidak bekerja jika tidak diminum secara teratur, dan dosis berlebih bisa menyebabkan efek samping yang parah bahkan berbahaya. Banyak obat psikiatri mulai menunjukkan efek positif hanya setelah dikonsumsi selama beberapa minggu."]
+    },
+    {
+        "tag": "fact-21",
+        "patterns": ["Di mana saya bisa mencari terapi?"],
+        "responses": ["Berbagai jenis terapi lebih efektif tergantung pada kondisi kesehatan mental dan/atau gejala yang dialami serta siapa orang yang mengalaminya (misalnya, anak-anak akan lebih diuntungkan dari terapis yang berspesialisasi dalam kesehatan mental anak). Namun, ada berbagai jenis pengobatan dan terapi yang bisa membantu."]
+    },
+    {
+        "tag": "fact-22",
+        "patterns": ["Di mana saya bisa belajar tentang jenis-jenis pengobatan kesehatan mental?"],
+        "responses": ["Kondisi kesehatan mental sering kali diobati dengan obat-obatan, terapi, atau kombinasi keduanya. Namun, ada banyak jenis pengobatan yang tersedia, termasuk Pengobatan Komplementer & Alternatif, rencana swabantu, dan dukungan sebaya. Pengobatan bersifat sangat pribadi dan sebaiknya dibicarakan antara individu dengan kondisi tersebut dan timnya."]
+    },
+    {
+        "tag": "fact-23",
+        "patterns": ["Apa saja jenis profesional kesehatan mental yang berbeda?"],
+        "responses": ["Ada banyak jenis profesional kesehatan mental. Menemukan yang tepat untuk Anda mungkin memerlukan sedikit riset."]
+    },
+    {
+        "tag": "fact-24",
+        "patterns": ["Di mana saya bisa menemukan kelompok dukungan?"],
+        "responses": ["Banyak orang merasa bahwa dukungan sebaya sangat membantu dalam proses pemulihan mereka. Ada berbagai organisasi yang menawarkan kelompok dukungan untuk konsumen, anggota keluarga, dan teman-teman mereka. Beberapa kelompok dipandu oleh sesama penyintas (peer-led), sementara yang lain dipandu oleh profesional kesehatan mental."]
+    },
+    {
+        "tag": "fact-25",
+        "patterns": ["Bisakah masalah kesehatan mental dicegah?"],
+        "responses": ["Kita semua bisa mengalami tantangan kesehatan mental, tetapi mengembangkan kesejahteraan, ketahanan, dan mencari bantuan sejak dini dapat membantu mencegah masalah menjadi serius."]
+    },
+    {
+        "tag": "fact-26",
+        "patterns": ["Apakah ada obat untuk masalah kesehatan mental?", "apakah ada penyembuhan untuk masalah kesehatan mental?"],
+        "responses": ["Lebih realistis dan membantu untuk mencari tahu apa yang bisa membantu mengatasi masalah yang Anda hadapi. Berbicara, konseling, pengobatan, pertemanan, olahraga, tidur yang baik, nutrisi yang tepat, dan kegiatan yang bermakna semuanya bisa membantu."]
+    },
+    {
+        "tag": "fact-27",
+        "patterns": ["Apa penyebab masalah kesehatan mental?"],
+        "responses": ["Tantangan atau masalah kesehatan mental bisa muncul dari faktor psikologis, biologis, dan sosial, serta peristiwa kehidupan."]
+    },
+    {
+        "tag": "fact-28",
+        "patterns": ["Apa yang harus saya lakukan jika saya khawatir tentang kesehatan mental saya?"],
+        "responses": ["Hal paling penting adalah berbicara kepada seseorang yang Anda percayai. Ini bisa saja teman, kolega, anggota keluarga, atau dokter. Selain berbicara dengan seseorang, mencari tahu lebih banyak informasi tentang apa yang Anda alami juga bisa membantu. Hal-hal ini bisa memberi perspektif dan menjadi awal untuk mendapatkan bantuan."]
+    },
+    {
+        "tag": "fact-29",
+        "patterns": ["Bagaimana saya tahu jika saya sedang tidak sehat?"],
+        "responses": ["Jika keyakinan, pikiran, perasaan, atau perilaku Anda berdampak besar pada kemampuan Anda untuk berfungsi secara normal atau biasa, maka penting untuk mencari bantuan."]
+    },
+    {
+        "tag": "fact-30",
+        "patterns": ["Bagaimana saya bisa menjaga koneksi sosial? Bagaimana jika saya merasa kesepian?"],
+        "responses": ["Banyak orang merasa sendirian sekarang, tetapi kita tidak harus merasa kesepian. Kita semua sedang menghadapi ini bersama-sama. Pikirkan cara-cara berbeda untuk terhubung yang paling bermakna bagi Anda. Misalnya, Anda mungkin lebih suka obrolan video dibandingkan telepon, atau lebih suka mengirim pesan sepanjang hari daripada sekali panggilan video. Kemudian, buatlah rencana dengan jejaring sosial Anda. Anda bisa mengobrol video dengan teman dekat di malam hari dan menelepon anggota keluarga seminggu sekali. Ingat untuk memperhatikan orang-orang yang mungkin tidak aktif secara online. Hubungi mereka lewat telepon dan tanyakan bagaimana Anda bisa membantu. Kualitas koneksi sosial Anda penting. Menelusuri media sosial secara sembarangan dan menyukai beberapa unggahan biasanya tidak membangun koneksi sosial yang kuat. Fokuslah pada strategi yang benar-benar membuat Anda merasa terhubung. Jika strategi saat ini tidak membantu Anda merasa terhubung, cobalah mencari solusinya. Semua orang merasa kesepian dari waktu ke waktu. Mungkin Anda baru pindah ke kota baru, sedang mengubah lingkaran pertemanan, kehilangan seseorang yang penting, atau kehilangan pekerjaan dan juga koneksi sosial dengan rekan kerja. Orang lain mungkin memiliki koneksi fisik tetapi merasa kebutuhan emosional atau sosialnya tidak terpenuhi. Pembatasan sosial atau isolasi diri bisa memperburuk rasa kesepian, apa pun penyebabnya. Hubungi koneksi yang Anda miliki. Usulkan cara untuk tetap berhubungan dan lihat apakah bisa menjadwalkan waktu rutin untuk mengobrol. Banyak orang ragu untuk menghubungi orang lain karena berbagai alasan, jadi jangan takut untuk menjadi orang yang memulai duluan. Cari kelompok dukungan komunitas atau bantuan bersama di media sosial. Pandemi ini telah mendekatkan kita semua, jadi carilah peluang untuk membangun koneksi baru. Kelompok ini bisa menjadi cara yang baik untuk berbagi keterampilan dan kemampuan Anda atau mencari bantuan dan dukungan. Cari juga kelompok dukungan khusus. Banyak kelompok dukungan yang kini tersedia secara daring, dan ada banyak saluran bantuan yang bisa Anda hubungi jika ingin berbicara dengan seseorang."]
+    },
+    {
+        "tag": "fact-31",
+        "patterns": ["Apa perbedaan antara kecemasan dan stres?"],
+        "responses": ["Stres dan kecemasan sering digunakan secara bergantian, dan memang ada beberapa kesamaan di antara keduanya. Stres terkait dengan respons 'lawan, lari, atau diam' yang sama seperti kecemasan, dan sensasi fisiknya bisa sangat mirip. Namun, penyebab stres dan kecemasan biasanya berbeda. Stres biasanya berkaitan dengan tekanan eksternal yang kita hadapi dan sulit diatasi. Saat kita stres, kita biasanya tahu apa penyebabnya, dan gejalanya akan hilang setelah situasinya selesai. Kecemasan, di sisi lain, tidak selalu mudah dikenali penyebabnya. Kecemasan berfokus pada kekhawatiran atau ketakutan akan hal-hal yang mungkin mengancam kita, termasuk rasa cemas terhadap rasa cemas itu sendiri. Stres dan kecemasan adalah bagian dari kehidupan manusia, tetapi keduanya bisa menjadi masalah jika berlangsung lama atau berdampak besar pada kesejahteraan atau kehidupan sehari-hari kita."]
+    },
+    {
+        "tag": "fact-32",
+        "patterns": ["Apa perbedaan antara kesedihan dan depresi?", "perbedaan antara kesedihan dan depresi"],
+        "responses": ["Kesedihan adalah reaksi normal terhadap kehilangan, kekecewaan, masalah, atau situasi sulit lainnya. Merasa sedih sesekali adalah bagian dari menjadi manusia. Dalam kasus seperti itu, kesedihan akan hilang dengan cepat dan Anda bisa menjalani kehidupan sehari-hari. Istilah lain untuk kesedihan bisa berupa merasa murung, merasa tertekan, atau merasa sedih. Seseorang mungkin berkata bahwa mereka merasa depresi, tetapi jika itu hilang dengan sendirinya dan tidak berdampak besar pada hidup, kemungkinan besar itu bukan gangguan depresi. Depresi adalah penyakit mental yang memengaruhi suasana hati Anda, cara Anda memahami diri sendiri, dan cara Anda memahami serta berhubungan dengan dunia sekitar. Depresi juga bisa disebut depresi klinis, gangguan depresi mayor, atau depresi berat. Depresi bisa muncul tanpa alasan, dan berlangsung lama. Ini jauh lebih dari sekadar sedih atau murung. Orang yang mengalami depresi mungkin merasa tidak berharga atau putus asa. Mereka bisa merasa bersalah secara tidak masuk akal. Beberapa orang mengalami depresi sebagai rasa marah atau mudah tersinggung. Mungkin sulit untuk berkonsentrasi atau mengambil keputusan. Sebagian besar orang kehilangan minat terhadap hal-hal yang dulu mereka nikmati dan mungkin menarik diri dari orang lain. Ada juga tanda fisik dari depresi, seperti masalah tidur, nafsu makan, energi, dan rasa sakit yang tidak bisa dijelaskan. Beberapa orang mengalami pikiran sulit tentang kematian atau keinginan untuk mengakhiri hidup (bunuh diri). Depresi berlangsung lebih dari dua minggu, tidak hilang dengan sendirinya, dan berdampak pada hidup Anda. Ini adalah penyakit nyata, dan sangat bisa diobati. Penting untuk mencari bantuan jika Anda khawatir mengalami depresi."]
+    }
+
+    ]
+}
