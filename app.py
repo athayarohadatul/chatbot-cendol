@@ -5,8 +5,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import json
 import random
 
-# Set repo model kamu di HF
-MODEL_ID = "athayary/best_model_cendol"  # Ganti dengan repo kamu
+
+MODEL_ID = "athayary/best_model_cendol" 
 
 @st.cache_resource
 def load_model():
