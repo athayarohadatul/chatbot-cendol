@@ -1,5 +1,8 @@
+streamlit
 torch
 transformers
-streamlit
+pandas
 numpy
-sastrawi
+Sastrawi
+nltk
+scikit-learn
