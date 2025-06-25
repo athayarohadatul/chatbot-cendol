@@ -154,8 +154,8 @@ def load_model():
     """Load the trained model and tokenizer"""
     try:
         # ✅ PERBAIKAN: Definisikan base model yang benar
-        BASE_MODEL_ID = "indonlp/cendol-mt5-small-inst"  # Atau model lain yang sesuai
-        FINE_TUNED_MODEL_PATH = "athayary/cendol"
+        BASE_MODEL_ID = "indolem/indobert-base-uncased"  # Atau model lain yang sesuai
+        FINE_TUNED_MODEL_PATH = "athayary/indobert"
         
         # Try to load fine-tuned model first, fallback to base model
         try:
